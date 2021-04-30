@@ -1,0 +1,141 @@
+:root {
+  line-height: 1.6;
+  --clr-p-violet: hsl(257, 40%, 49%);
+  --clr-p-soft-magenta: hsl(300, 69%, 71%);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
+  background-color: var(--clr-p-violet);
+  background-image: url(../images/bg-mobile.svg);
+  background-position: top;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+header {
+  padding: 2rem 0.7rem;
+  margin-left: 1.5rem;
+  text-align: initial;
+}
+header > img {
+  width: 7rem;
+}
+main {
+  width: 85%;
+  margin: 0.8rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main > img {
+  width: 100%;
+  margin: 0.5rem auto;
+}
+.text {
+  margin: 3rem auto;
+}
+.text > h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+.text > p {
+  font-weight: 400;
+}
+.text > button {
+  outline: none;
+  border: none;
+  padding: 0.8rem 5rem;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+  color: var(--clr-p-violet);
+  margin: 0.3rem auto;
+  box-shadow: 0 2px 20px 1px rgba(0, 0, 0, 0.473);
+}
+.soical-icon {
+  margin: 1rem auto;
+  margin-top: -0.4rem;
+}
+.soical-icon > * {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 1px solid #fff;
+  padding: 0.45rem;
+  margin-left: 0.4rem;
+  width: 22.2px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 400px) {
+  body {
+    background-image: url(../images/bg-desktop.svg);
+  }
+  header {
+    width: 90%;
+    margin: 0 auto;
+  }
+  header > img {
+    width: 12rem;
+  }
+  main {
+    width: 90%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: left;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 1.9rem;
+    margin: 2.5rem auto 0.8rem;
+  }
+  main > * {
+    flex: 1 1 25rem;
+  }
+  .text {
+    max-width: 29rem;
+  }
+  main > .text > h2 {
+    font-size: 2.6rem;
+    margin: 0;
+  }
+  .text > button {
+    padding: 1rem 3rem;
+  }
+  main > .soical-icon {
+    text-align: end;
+    font-size: 1.2rem;
+  }
+  button:hover {
+    background-color: var(--clr-p-soft-magenta);
+    color: #fff;
+  }
+  .soical-icon > i:hover {
+    color: var(--clr-p-soft-magenta);
+    border-color: var(--clr-p-soft-magenta);
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+  }
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
